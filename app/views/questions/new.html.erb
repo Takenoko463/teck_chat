@@ -1,15 +1,8 @@
 <form class="create-question">
-  <div class="create-question-title">
-    <input type="text" name="title" placeholder="タイトル">
-  </div>
-  <div class="create-question-content">
-    <textarea name="content" placeholder="質問内容">
-  </textarea>
-  </div>
-  <div class="creator-name-question">
-    <input type="text" name="poster_name" placeholder="投稿者名">
-  </div>
-  <div class="create-question-button">
-    <input type="submit" name="POST">
-  </div>
+  <%= form_with(model: @question, local: true) do |form| %>
+    <%= form.text_field :title, placeholder: "タイトル" %>
+    <%= form.text_area :content, placeholder: "投稿内容" %>
+    <%= form.text_field :user, placeholder: "投稿者名" %>
+    <%= form.submit "POST" %>
+  <% end %>
 </form>
