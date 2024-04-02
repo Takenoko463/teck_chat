@@ -1,24 +1,20 @@
-# README
+#　モデル設計
+questionモデル
+- title
+- content
+- user_name
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# コントローラー設計
+## index
+質問投稿一覧の表示
+### コントローラー
+@questions変数にすべてのtweetを挿入
+### view
+eachメソッドで@questionsからすべてを出力
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## new
+質問投稿画面の表示
+### コントローラー
+空のinstance変数、@questionを作成
+### view
+formヘルパーメソッドに@questionを挿入
