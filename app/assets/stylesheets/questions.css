@@ -17,3 +17,111 @@ div {
     margin: 0;
     padding: 0;
 }
+
+
+/**ヘッダー用**/
+
+header {
+    background-color: #1C3667;
+    height: 65px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .title {
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: 100;
+    letter-spacing: 1.8px;
+}
+
+header .new-question {
+    height: 32px;
+    width: 80px;
+    color: #3A3736;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 4px 0;
+}
+
+
+/*main画面*/
+
+main {
+    height: calc(100vh - 65px);
+    width: 100vw;
+    background-color: #f2f2f3;
+    padding-top: 90px;
+}
+
+
+/*questions*/
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    height: 100px;
+    width: 700px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.question-sidebar {
+    height: 100%;
+    width: 70px;
+    color: #FFFFFF;
+    background-color: #1C3667;
+    border-radius: 5px 0 0 5px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.comments-num {
+    height: 38px;
+    font-size: 26px;
+}
+
+.sidebar-title {
+    height: 16px;
+    font-size: 11px;
+    border-radius: 5px 0 0 5px;
+}
+
+.question-main {
+    width: calc( 700px - 70px);
+    background-color: #FFFFFF;
+    padding: 10px 15px;
+}
+
+.question-header {
+    display: flex;
+}
+
+.question-title {
+    width: 500px;
+    font-size: 14px;
+}
+
+.question-user-name {
+    font-size: 12px;
+}
+
+.question-content {
+    font-size: 12px;
+}
+
+
+/*質問投稿画面*/
