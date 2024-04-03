@@ -13,6 +13,7 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    @question=Question.find(id:1)
     @answers=@question.answers
   end
   private
