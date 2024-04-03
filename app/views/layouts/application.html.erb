@@ -10,8 +10,8 @@
   </head>
   <body>
     <header>
-      <a href="#" class="title">TechChat</a>
-      <a href="#" class="new-question">質問する</a>
+      <%=link_to "TechChat",root_path,class:"title"%>
+      <%=link_to "質問する",new_question_path,class:"new-question"%>
     </header>
     <%= yield %>
   </body>
