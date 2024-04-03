@@ -1,5 +1,8 @@
-<main>
-  <div class="questions">
-    <%=render partial:"form" ,locals:{question:@question} %>
+<main class="new">
+  <div class="question-form">
+    <div class="question-form-header"></div>
+    <div class="question-form-main">
+      <%=render partial:"form" ,locals:{question:@question} %>
+    </div>
   </div>
 </main>
