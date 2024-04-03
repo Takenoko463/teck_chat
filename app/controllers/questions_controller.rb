@@ -12,6 +12,9 @@ class QuestionsController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @answers=@question.answers
+  end
   private
 
   def question_params
