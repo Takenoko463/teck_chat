@@ -1,3 +1,11 @@
 <main>
   <%=render partial:"question" ,locals:{question:@question} %>
+  <% @answers.each |answer| do %>
+    <div class="question-content">
+      <%=answer.content%>
+    </div>
+    <div class="question-user-name">
+      <%=answer.user_name%>
+    </div>
+  <% end %>
 </main>
