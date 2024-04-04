@@ -13,7 +13,7 @@ class QuestionsController < ApplicationController
   end
 
   def show
-    @question = Question.find(id: 1)
+    @question = Question.find(params[:id])
     @answers = @question.answers
   end
 
