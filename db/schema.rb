@@ -16,7 +16,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_03_032351) do
     t.string "user_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "question_id"
+    t.bigint "question_id"
+    t.index ["question_id"], name: "index_answers_on_question_id"
   end
 
   create_table "questions", charset: "utf8mb4", force: :cascade do |t|
@@ -27,4 +28,5 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_03_032351) do
     t.string "user_name"
   end
 
+  add_foreign_key "answers", "questions"
 end
