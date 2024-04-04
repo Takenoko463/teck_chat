@@ -1,4 +1,5 @@
 class AnswersController < ApplicationController
-  def create
+  def new
+    @answer = Answer.new
   end
 end
