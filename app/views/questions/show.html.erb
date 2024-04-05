@@ -1,4 +1,5 @@
 <main>
   <%=render partial:"question" ,locals:{question:@question},class:"questions" %>
+  <%=render partial: "answers/index",locals:{answers:@answers}%>
   <%=render partial: "answers/new",locals:{answer:@answer,question:@question}%>
 </main>
