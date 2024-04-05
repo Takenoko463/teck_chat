@@ -1,5 +1,7 @@
 <main>
   <div class="questions">
-    <%=render partial:"questions" ,locals:{questions:@questions} %>
+    <% @questions.each do |question| %>
+      <%=render partial:"question" ,locals:{question:question} %>
+    <% end %>
   </div>
 </main>

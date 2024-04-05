@@ -12,6 +12,12 @@ class QuestionsController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @question = Question.find(params[:id])
+    @answers = @question.answers
+    @answer = Answer.new
+  end
+
   private
 
   def question_params

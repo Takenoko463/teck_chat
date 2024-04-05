@@ -1,9 +1,12 @@
 #　モデル設計
-questionモデル
+## questionモデル
 - title
 - content
 - user_name
-
+## answerモデル
+- content
+- question_id
+- user_name
 # コントローラー設計
 ## index
 質問投稿一覧の表示

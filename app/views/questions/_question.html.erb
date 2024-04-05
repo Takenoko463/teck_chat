@@ -1,0 +1,23 @@
+<div class="question">
+  <div class="question-sidebar">
+    <div class="comments-num">
+      0
+    </div>
+    <div class="sidebar-title">
+      comments
+    </div>
+  </div>
+  <div class="question-main">
+    <div class="question-header">
+      <div class="question-title">
+        <%=link_to question.title,question_path(question.id)%>
+      </div>
+      <div class="question-user-name">
+        <%=question.user_name%>
+      </div>
+    </div>
+    <div class="question-content">
+      <%=question.content%>
+    </div>
+  </div>
+</div>
