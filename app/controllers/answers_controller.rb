@@ -1,5 +1,6 @@
 class AnswersController < ApplicationController
-  def new
-    @answer = Answer.new
+  def create
+    binding.pry
+    #@answer = Answer.question(params.id)
   end
 end

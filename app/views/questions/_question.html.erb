@@ -10,7 +10,7 @@
   <div class="question-main">
     <div class="question-header">
       <div class="question-title">
-        <%=question.title%>
+        <%=link_to question.title,question_path(question.id)%>
       </div>
       <div class="question-user-name">
         <%=question.user_name%>
