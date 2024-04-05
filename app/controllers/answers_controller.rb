@@ -1,6 +1,12 @@
 class AnswersController < ApplicationController
   def create
-    binding.pry
-    #@answer = Answer.question(params.id)
+    @answer = Answer.create(answer_param)
+    redirect_to question_path(@answer.question_id)
+  end
+
+  private
+
+  def answer_param
+    params.require(:answer).permit(:content, :user_name).merge(question_id: params[:question_id])
   end
 end
