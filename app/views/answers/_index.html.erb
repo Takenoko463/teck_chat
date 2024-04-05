@@ -1,8 +1,12 @@
 <% answers.each do |answer|%>
-  <div class="question-content">
-    <%=answer.content%>
-  </div>
-  <div class="question-user-name">
-    <%=answer.user_name%>
+  <div class="question">
+    <div class="question-main">
+      <div class="question-content">
+        <%=answer.content%>
+      </div>
+      <div class="question-user-name">
+        <%=answer.user_name%>
+      </div>
+    </div>
   </div>
 <% end %>
